@@ -1,0 +1,37 @@
+<?php
+
+// 1. Accidentally using one = instead of 2 ==
+/*
+$my_variable = 'test';
+if ($my_variable = 'something else') {
+  // Do something.
+}
+print $my_variable;
+*/
+
+// 2. Missing a bracket.
+// Parse error: syntax error, unexpected $end
+/*
+$array = array('one', 'two', 'three');
+$test = 'test';
+if ($test == 'test') {
+  foreach ($array as $item) {
+    // Do
+    // something
+    // here.
+}
+*/
+
+// 3. Missing an ending semi-colon.
+// Parse error: syntax error, unexpected T_VARIABLE
+/*
+$test = 'test';
+$another = 'another'
+$again = 'again';
+*/
+
+// 4. Forgetting the $ in the variable.
+// Parse error: syntax error, unexpected '=' 
+//test = 'test';
+
+?>
