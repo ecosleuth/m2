@@ -19,7 +19,7 @@
 function input_simple_form($form, &$form_submit) {
   $form['color'] = array(
     '#title' => t('Favorite color'),
-    '#type' => 'textfield',
+    '#type' => 'dangit',
     '#required' => TRUE,
     '#description' => t('What is your favorite color? Blue? No, wait-'),
   );
